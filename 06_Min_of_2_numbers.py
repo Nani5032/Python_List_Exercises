@@ -8,16 +8,16 @@ map() function maps each element with given function(in this case its 'int')
 
 a, b = map(int, input('enter 2 numbers: ').split())
 
-print(a, b)
+print('entered numbers are :', a, b)
 
-def maximum(a, b):
-    if a >= b:
+def minimum(a, b):
+    if a <= b:
         return a
-    if b > a:
+    if b < a:
         return b
 
-print('bigger number is:', maximum(a, b))
+print("smaller number is :", minimum(a, b))
 
 #another way using inbuild min() function
 
-print('big num is ', max(a,b))
+print('small num is ', min(a,b))
